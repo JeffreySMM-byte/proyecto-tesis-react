@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+
+import Card from "./Card/card";
+
+
+
 
 class Counter extends Component {
   state = {
@@ -6,18 +12,20 @@ class Counter extends Component {
     tags:['tag1', 'tag2', 'tag3']
   };
 
-  renderTags(){
-      if(this.state.tags.length === 0) return <p>There are no tags!</p>;
-
-      return <ul>{ this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
-  }
-
+  
+  
   render() {
     return (
-      <div>
-        {this.state.tags.length===0 && 'Please create a new tag!'}
-        {this.renderTags()}
-      </div>
+      <Container style={{ backgroundColor: "red", height: "100%" }} fluid h-100>
+        <Container style={{ padding: 10 }}>
+          {
+            this.state.tags.map((titles) => 
+              <Card textVal = {titles}></Card>
+            )
+          }
+          <Button>ALAVERGA</Button>
+        </Container>
+      </Container>
     );
   }
   
