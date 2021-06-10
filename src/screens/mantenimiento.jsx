@@ -1,15 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Navbar from "../components/navbar/navbar";
 
 const Mantenimiento = () => {
   return (
-    <Container style={{ backgroundColor: "purple" }} fluid>
-      <Container style={{ backgroundColor: "black" }} fluid>
-      
-      </Container>
+    <div style = {{height:"100vh"}}> 
+    <Container style={{ backgroundColor: "blue" }} fluid>
       <Container>Mantenimiento</Container>
     </Container>
+    </div>
   );
 };
 

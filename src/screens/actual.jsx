@@ -5,9 +5,6 @@ import Navbar from "../components/navbar/navbar";
 const Actual = () => {
   return (
     <Container style={{ backgroundColor: "yellow" }} fluid>
-      <Container style={{ backgroundColor: "orange" }} fluid>
-        
-      </Container>
       <Container>Actual</Container>
     </Container>
   );
