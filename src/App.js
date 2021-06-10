@@ -1,13 +1,16 @@
-import React from "react";
 import "./App.css";
-import * as ReactBootStrap from "react-bootstrap";;
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/navbar/navbar";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
+
+
+function App()  {
+  return   (
+    <div className="App"><Navbar/></div>
+    
   );
 }
+
 
 export default App;

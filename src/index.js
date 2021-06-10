@@ -1,20 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./index.css";
+import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Counter from './components/counter';
-import Actual from "./screens/actual";
-import Total from "./screens/total";
-import Mantenimiento from "./screens/mantenimiento";
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <Mantenimiento />
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
