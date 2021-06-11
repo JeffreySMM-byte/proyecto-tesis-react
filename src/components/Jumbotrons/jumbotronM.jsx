@@ -7,7 +7,7 @@ const Styles = styled.div`
   .jumbo {
     background: url(${Coffee}) no-repeat fixed bottom;
     background-size: cover;
-    color: #ccc;
+    color: #efefef;
     height: 1000px;
     position: relative;
     z-index: -2;
@@ -15,7 +15,7 @@ const Styles = styled.div`
 
   .overlay {
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     top: 0;
     left: 0;
