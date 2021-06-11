@@ -1,13 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import JumbotronM from "../components/Jumbotrons/jumbotronM";
 
 const Mantenimiento = () => {
   return (
-    <div style = {{height:"100vh"}}> 
-    <Container style={{ backgroundColor: "blue" }} fluid>
-      <Container>Mantenimiento</Container>
+    <Container fluid>
+      <JumbotronM></JumbotronM>
     </Container>
-    </div>
   );
 };
 

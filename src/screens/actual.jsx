@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Navbar from "../components/navbar/navbar";
+import JumbotronA from "../components/Jumbotrons/jumbotronA";
 
 const Actual = () => {
   return (
-    <Container style={{ backgroundColor: "yellow" }} fluid>
-      <Container>Actual</Container>
+    <Container fluid>
+      <JumbotronA></JumbotronA>
     </Container>
   );
 };
