@@ -1,21 +1,14 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./styles.css";
+import React from "react";
 
-class Card extends Component {
-  render() {
-    return (
-      <Container style={{ backgroundColor: "red", height: "100%" }} fluid h-100>
-        <Container style={{ padding: 10 }}>
-          <Row>
-            <Col sm={12} lg={12} className="card">
-              {this.props.textVal}
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-    );
-  }
-}
+
+const Card =  ()  =>  {
+  return  (
+    <div className="card bg-primary mb-3">
+        <div className="card-body">
+          <h4 className="card-title">Card Title</h4>
+          <p className="card-text text-secondary">asdfasdfasdfasdfasfasdfasdfas</p>
+        </div>
+    </div>  );
+};
 
 export default Card;
