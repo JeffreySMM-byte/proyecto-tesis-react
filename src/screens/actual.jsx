@@ -17,14 +17,16 @@ const Actual = () => {
       <Container fluid style={{ padding: 0 }}>
         <h1 style={{ color: "white" }}>Datos Actuales</h1>
       </Container>
-      <div className ="container">
-        <div className="row">
-          <div className="col-xl-6">
+      <div className ="container mt-5">
+        <div className="row align-items-center">
+          <div className="col-xl-6 col-md-6 bg-danger">
+            <Card/>
+            <Card/>
             <Card/>
           </div>
-          <div className="col-xl-6">
-          <div className="row">
-            <Card/>
+          <div className="col-xl-6 col-md-6 bg-warning">
+          <Card/>
+          <div className="row justify-content-center ">
             <Card/>
             </div>
           </div>
