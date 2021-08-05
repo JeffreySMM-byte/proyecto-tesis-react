@@ -1,34 +1,44 @@
-import React, { Component } from "react";
-import { Container, Button } from "react-bootstrap";
-
-import Card from "./Card/card";
+import React, { useEffect, useState } from "react";
 
 
 
 
-class Counter extends Component {
-  state = {
-    count: 0,
-    tags:['tag1', 'tag2', 'tag3']
-  };
+const Counter =  (props)  =>  {
+  const [time, setTime] = useState(0);
+  const [timerOn, setTimerOn] = useState(false);
 
-  
-  
-  render() {
-    return (
-      <Container style={{ backgroundColor: "red", height: "100%" }} fluid h-100>
-        <Container style={{ padding: 10 }}>
-          {
-            this.state.tags.map((titles) => 
-              <Card textVal = {titles}></Card>
-            )
-          }
-          <Button>ALAVERGA</Button>
-        </Container>
-      </Container>
-    );
-  }
-  
+  useEffect(() => {
+    let interval = null;
+
+    if (timerOn){
+      interval = setInterval(() => {
+        setTimerOn(prevTime => prevTime + 10)
+
+      },10)
+    } else {
+      clearInterval(interval)
+    }
+
+    return () => clearInterval(interval)
+
+  }, [timerOn])
+
+  return(
+
+    <div>
+    <div>{time}</div>
+    <div>
+    <button onClick={() => setTimerOn(true)}>Start</button>
+    <button onClick={() => setTimerOn(false)}>Stop</button>
+    <button onClick={() => setTimerOn(true)}>Resume</button>
+    <button onClick={() => setTime(0)}>Reset</button>
+    </div>
+    </div>
+
+  );
+
+
+
 }
 
 export default Counter;
